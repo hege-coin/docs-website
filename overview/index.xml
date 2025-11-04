@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on Hegecoin docs</title>
-    <link>https://hege-coin.github.io/docs-website/overview/</link>
+    <link>https://docs.hegecoin.com/overview/</link>
     <description>Recent content in Overview on Hegecoin docs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Oct 2025 11:50:47 +0100</lastBuildDate>
-    <atom:link href="https://hege-coin.github.io/docs-website/overview/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docs.hegecoin.com/overview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>https://hege-coin.github.io/docs-website/overview/introduction/</link>
+      <link>https://docs.hegecoin.com/overview/introduction/</link>
       <pubDate>Thu, 30 Oct 2025 11:09:01 +0100</pubDate>
-      <guid>https://hege-coin.github.io/docs-website/overview/introduction/</guid>
+      <guid>https://docs.hegecoin.com/overview/introduction/</guid>
       <description>Hege is more than just a project with memes and a storyline. We are aiming to build a community full of humor, transparency and knowledge. The original concept for Hege was for him to win over his crush, Hegena, but as the project progressed, the team realized that there’s other narratives that they can utilize, alongside the storyline.</description>
     </item>
     <item>
       <title>About Hege</title>
-      <link>https://hege-coin.github.io/docs-website/overview/about-hege/</link>
+      <link>https://docs.hegecoin.com/overview/about-hege/</link>
       <pubDate>Thu, 30 Oct 2025 11:50:38 +0100</pubDate>
-      <guid>https://hege-coin.github.io/docs-website/overview/about-hege/</guid>
+      <guid>https://docs.hegecoin.com/overview/about-hege/</guid>
       <description>Learn about the story so far.</description>
     </item>
     <item>
       <title>Tokenomics</title>
-      <link>https://hege-coin.github.io/docs-website/overview/tokenomics/</link>
+      <link>https://docs.hegecoin.com/overview/tokenomics/</link>
       <pubDate>Thu, 30 Oct 2025 11:50:43 +0100</pubDate>
-      <guid>https://hege-coin.github.io/docs-website/overview/tokenomics/</guid>
+      <guid>https://docs.hegecoin.com/overview/tokenomics/</guid>
       <description>Background on Hege&amp;rsquo;s tokenomics and the decisions behind them.</description>
     </item>
     <item>
       <title>Mission</title>
-      <link>https://hege-coin.github.io/docs-website/overview/mission/</link>
+      <link>https://docs.hegecoin.com/overview/mission/</link>
       <pubDate>Thu, 30 Oct 2025 11:50:47 +0100</pubDate>
-      <guid>https://hege-coin.github.io/docs-website/overview/mission/</guid>
+      <guid>https://docs.hegecoin.com/overview/mission/</guid>
       <description>Hege is more than a meme. We&amp;rsquo;re building a community that laughs together, learns together, and thrives together.</description>
     </item>
   </channel>

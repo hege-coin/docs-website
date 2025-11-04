@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Roadmap on Hegecoin docs</title>
-    <link>https://hege-coin.github.io/docs-website/roadmap/</link>
+    <link>https://docs.hegecoin.com/roadmap/</link>
     <description>Recent content in Roadmap on Hegecoin docs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Oct 2025 11:51:03 +0100</lastBuildDate>
-    <atom:link href="https://hege-coin.github.io/docs-website/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docs.hegecoin.com/roadmap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Roadmap</title>
-      <link>https://hege-coin.github.io/docs-website/roadmap/roadmap/</link>
+      <link>https://docs.hegecoin.com/roadmap/roadmap/</link>
       <pubDate>Thu, 30 Oct 2025 11:35:20 +0100</pubDate>
-      <guid>https://hege-coin.github.io/docs-website/roadmap/roadmap/</guid>
+      <guid>https://docs.hegecoin.com/roadmap/roadmap/</guid>
       <description>At Hege, we like to stay flexible so nothing is set in stone. The crypto market changes like the wind, so to stay relevant, we have to adapt.</description>
     </item>
     <item>
       <title>Content and Brand</title>
-      <link>https://hege-coin.github.io/docs-website/roadmap/content-and-brand/</link>
+      <link>https://docs.hegecoin.com/roadmap/content-and-brand/</link>
       <pubDate>Thu, 30 Oct 2025 11:50:55 +0100</pubDate>
-      <guid>https://hege-coin.github.io/docs-website/roadmap/content-and-brand/</guid>
+      <guid>https://docs.hegecoin.com/roadmap/content-and-brand/</guid>
       <description>Brand is critical in achieving our goals, and that&amp;rsquo;s why it is always being adjusted, improved and adapted.</description>
     </item>
     <item>
       <title>Chapter Unlocks</title>
-      <link>https://hege-coin.github.io/docs-website/roadmap/chapter-unlocks/</link>
+      <link>https://docs.hegecoin.com/roadmap/chapter-unlocks/</link>
       <pubDate>Thu, 30 Oct 2025 11:51:03 +0100</pubDate>
-      <guid>https://hege-coin.github.io/docs-website/roadmap/chapter-unlocks/</guid>
+      <guid>https://docs.hegecoin.com/roadmap/chapter-unlocks/</guid>
       <description>Chapter unlocks are what makes Hege, well, Hege!</description>
     </item>
   </channel>
