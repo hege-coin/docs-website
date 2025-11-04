@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hege Documentation on Hegecoin docs</title>
+    <link>https://docs.hegecoin.com/</link>
+    <description>Recent content in Hege Documentation on Hegecoin docs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Oct 2025 11:51:03 +0100</lastBuildDate>
+    <atom:link href="https://docs.hegecoin.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roadmap</title>
+      <link>https://docs.hegecoin.com/roadmap/roadmap/</link>
+      <pubDate>Thu, 30 Oct 2025 11:35:20 +0100</pubDate>
+      <guid>https://docs.hegecoin.com/roadmap/roadmap/</guid>
+      <description>At Hege, we like to stay flexible so nothing is set in stone. The crypto market changes like the wind, so to stay relevant, we have to adapt.</description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://docs.hegecoin.com/overview/introduction/</link>
+      <pubDate>Thu, 30 Oct 2025 11:09:01 +0100</pubDate>
+      <guid>https://docs.hegecoin.com/overview/introduction/</guid>
+      <description>Hege is more than just a project with memes and a storyline. We are aiming to build a community full of humor, transparency and knowledge. The original concept for Hege was for him to win over his crush, Hegena, but as the project progressed, the team realized that there’s other narratives that they can utilize, alongside the storyline.</description>
+    </item>
+    <item>
+      <title>Content and Brand</title>
+      <link>https://docs.hegecoin.com/roadmap/content-and-brand/</link>
+      <pubDate>Thu, 30 Oct 2025 11:50:55 +0100</pubDate>
+      <guid>https://docs.hegecoin.com/roadmap/content-and-brand/</guid>
+      <description>Brand is critical in achieving our goals, and that&amp;rsquo;s why it is always being adjusted, improved and adapted.</description>
+    </item>
+    <item>
+      <title>About Hege</title>
+      <link>https://docs.hegecoin.com/overview/about-hege/</link>
+      <pubDate>Thu, 30 Oct 2025 11:50:38 +0100</pubDate>
+      <guid>https://docs.hegecoin.com/overview/about-hege/</guid>
+      <description>Learn about the story so far.</description>
+    </item>
+    <item>
+      <title>Chapter Unlocks</title>
+      <link>https://docs.hegecoin.com/roadmap/chapter-unlocks/</link>
+      <pubDate>Thu, 30 Oct 2025 11:51:03 +0100</pubDate>
+      <guid>https://docs.hegecoin.com/roadmap/chapter-unlocks/</guid>
+      <description>Chapter unlocks are what makes Hege, well, Hege!</description>
+    </item>
+    <item>
+      <title>Tokenomics</title>
+      <link>https://docs.hegecoin.com/overview/tokenomics/</link>
+      <pubDate>Thu, 30 Oct 2025 11:50:43 +0100</pubDate>
+      <guid>https://docs.hegecoin.com/overview/tokenomics/</guid>
+      <description>Background on Hege&amp;rsquo;s tokenomics and the decisions behind them.</description>
+    </item>
+    <item>
+      <title>Mission</title>
+      <link>https://docs.hegecoin.com/overview/mission/</link>
+      <pubDate>Thu, 30 Oct 2025 11:50:47 +0100</pubDate>
+      <guid>https://docs.hegecoin.com/overview/mission/</guid>
+      <description>Hege is more than a meme. We&amp;rsquo;re building a community that laughs together, learns together, and thrives together.</description>
+    </item>
+  </channel>
+</rss>

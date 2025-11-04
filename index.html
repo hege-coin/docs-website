@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Hegecoin docs
+    </title>
+    <meta name="author" content="Hege">
+    <meta name="description" content="Welcome to the Hege documentation site. We use this site to discuss our white paper, roadmap and future plans. Please refer to the navigation on the left to help you find your way around.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="alternate" type="application/rss+xml" href="https://docs.hegecoin.com/index.xml" title="Hege Documentation">
+    <link rel="sitemap" type="application/xml" href="https://docs.hegecoin.com/sitemap.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="canonical" href="https://docs.hegecoin.com/">
+    <link rel="prefetch" href="/overview/">
+    <link rel="prefetch" href="/overview/introduction/">
+    <link rel="prefetch" href="/overview/about-hege/">
+    <link rel="prefetch" href="/overview/tokenomics/">
+    <link rel="prefetch" href="/overview/mission/">
+    <link rel="prefetch" href="/roadmap/">
+    <link rel="prefetch" href="/roadmap/roadmap/">
+    <link rel="prefetch" href="/roadmap/content-and-brand/">
+    <link rel="prefetch" href="/roadmap/chapter-unlocks/">
+    <style>
+    /* https: //www.joshwcomeau.com/css/custom-css-reset/ */
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    * {
+    margin: 0;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+    }
+
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+    display: block;
+    max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+    font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    overflow-wrap: break-word;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    text-wrap: pretty;
+    }
+
+    /* General */
+
+    html {
+    --white: #f8f9fa;
+    --black: #202124;
+    --text-color: light-dark(var(--black), var(--white));
+    --muted-text-color: rgb(from var(--text-color) r g b / 0.8);
+    --bg-color: light-dark(var(--white), var(--black));
+    --link-color: light-dark(#0668c9, #3b90e6);
+    --border-color: rgb(from var(--text-color) r g b / 0.35);
+    --muted-border-color: rgb(from var(--text-color) r g b / 0.15);
+    --hover-color: rgb(from var(--text-color) r g b / 0.08);
+    }
+
+    /* Fuck you old Safari */
+    @supports not (color: light-dark(#fff, #000)) {
+    html {
+        --border-color: #666;
+        --muted-border-color: #666;
+        --link-color: #3b90e6;
+    }
+    }
+
+    body {
+    font-family: system-ui, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    }
+
+    a {
+    color: var(--link-color);
+    }
+
+    a[href^='http']:after {
+    content: '↗';
+    margin-left: 5px;
+    color: rgb(from var(--text-color) r g b / 0.5);
+    /* Removes underline (in some browsers?) */
+    display: inline-block;
+    }
+
+    .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+    }
+
+    /* Layout */
+
+    body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 260px minmax(500px, 800px) 1fr;
+    grid-template-rows: 100px 1fr;
+    }
+
+    header {
+    grid-row: 1;
+    grid-column: 1 / 5;
+    border-bottom: 1px solid var(--muted-border-color);
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 260px minmax(500px, 800px) 1fr;
+    }
+
+    header .logo {
+    grid-column: 2;
+    padding: 10px;
+    }
+
+    header div {
+    grid-column: 3;
+    align-self: end;
+    justify-self: end;
+    font-size: 0.9rem;
+    color: var(--muted-text-color);
+    padding-right: 15px;
+    }
+
+    .nav-toggle {
+    display: none;
+    }
+
+    body>nav {
+    grid-column: 2;
+    padding: 50px 40px 54px 0;
+    }
+
+    main {
+    grid-column: 3;
+    padding: 40px;
+    border: 1px solid var(--muted-border-color);
+    border-width: 0 1px;
+    }
+
+    /* Main navigation */
+
+    body>nav {
+    font-size: 0.9rem;
+    }
+
+    body>nav ul {
+    list-style: none;
+    margin-bottom: 25px;
+    padding: 0;
+    }
+
+    body>nav li {
+    padding: 0;
+    }
+
+    body>nav h3 {
+    font-size: 1rem;
+    }
+
+    body>nav a {
+    display: flex;
+    align-items: center;
+    padding: 7px 8px;
+    margin: 4px 0;
+    border-radius: 5px;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    }
+
+    /* Image wrapper */
+    body>nav a span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--white);
+    }
+
+    body>nav a img {
+    max-height: 14px;
+    max-width: 18px;
+    }
+
+    body>nav a:hover {
+    background: var(--hover-color);
+    }
+
+    body>nav a.current {
+    background: rgb(from var(--text-color) r g b / 0.15);
+    }
+
+    .links {
+    margin-top: 30px;
+    }
+
+    .links a {
+    font-size: 13px;
+    padding: 4px 5px;
+    margin-left: 3px;
+    }
+
+    /* Main content */
+
+    h1 {
+    margin: 0 0 15px 0;
+    font-size: 2.25rem;
+    }
+
+    h2 {
+    font-size: 1.5rem;
+    margin: 25px 0 10px;
+    }
+
+    article h2 {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 3px;
+    margin: 25px 0 15px 0;
+    }
+
+    p.intro {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    }
+
+    .updated-on {
+    color: var(--muted-text-color);
+    font-size: 1rem;
+    }
+
+    p {
+    margin: 15px 0;
+    }
+
+    h2+p {
+    margin-top: 0;
+    }
+
+    .related-articles {
+    margin-top: 50px;
+    }
+
+    .related-articles h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    }
+
+    .related-articles a {
+    margin: 2px 0;
+    display: inline-block;
+    }
+
+    /* Button-style links */
+    .featured-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    }
+
+    .featured-links li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 20px 0 0;
+    }
+
+    .featured-links a {
+    display: block;
+    padding: 13px 17px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-color);
+    }
+
+    .featured-links a:hover {
+    background: var(--hover-color);
+    }
+
+    /* Mobile (narrow) view */
+    @media screen and (max-width: 920px) {
+
+    body {
+        display: block;
+        height: auto;
+    }
+
+    header {
+        width: auto;
+        padding: 20px 15px;
+        display: flex;
+        gap: 15px;
+    }
+
+    header .logo {
+        padding: 5px 0 0 0;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    header div {
+        padding: 0;
+    }
+
+    body>nav,
+    main {
+        padding: 15px;
+        width: auto;
+    }
+
+    main {
+        border-width: 1px 0 0 0;
+    }
+
+    /* https://stackoverflow.com/questions/48143381/css-expand-contract-animation-to-show-hide-content */
+    .nav-toggle {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .nav-toggle:hover {
+        cursor: pointer;
+    }
+
+    .nav-toggle label {
+        display: block;
+        padding: 15px 0;
+        font-weight: bold;
+    }
+
+    .nav-toggle svg {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-left: 15px;
+        transition: transform 200ms linear;
+    }
+
+    .nav-toggle:has(input:checked)+nav {
+        grid-template-rows: 1fr;
+    }
+
+    .nav-toggle:has(input:checked) svg {
+        transform: rotate(90deg);
+    }
+
+    body>nav {
+        padding: 0 10px;
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 200ms ease-out;
+    }
+
+    body>nav .nav-content {
+        overflow: hidden;
+    }
+    }
+    </style>
+    <script>
+    const colorMeta = document.querySelector('meta[name="color-scheme"]');
+    function setColorMode(mode) {
+      colorMeta.setAttribute('content', mode);
+      localStorage.setItem('mode', mode);
+    }
+    addEventListener("DOMContentLoaded", function () {
+      if (mode = localStorage.getItem('mode')) {
+        document.getElementById('color-mode').value = mode
+        setColorMode(mode); 
+      }
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo" title="To front page"><img src="/images/hege-logo.svg" width="120" alt="HEGE logo, printed in capital, yellow block letters with black outlines."></a>
+      <div>
+        <label for="color-mode">Color</label> <select id="color-mode" onchange="setColorMode(this.value)">
+          <option value="light dark">
+            Auto
+          </option>
+          <option value="light">
+            Light
+          </option>
+          <option value="dark">
+            Dark
+          </option>
+        </select>
+      </div>
+    </header>
+    <div class="nav-toggle">
+      <label for="toggle-input-1"><svg xmlns="http://www.w3.org/2000/svg" height="14" viewbox="0 -960 960 960" width="14" fill="currentcolor">
+      <path d="M579-480 285-774q-15-15-14.5-35.5T286-845q15-15 35.5-15t35.5 15l307 308q12 12 18 27t6 30q0 15-6 30t-18 27L356-115q-15 15-35 14.5T286-116q-15-15-15-35.5t15-35.5l293-293Z"></path></svg> Menu</label> <input type="checkbox" id="toggle-input-1" class="visually-hidden" aria-label="Expand or collapse main menu">
+    </div>
+    <nav>
+      <div class="nav-content">
+        <h3>
+          <a href="/overview/"><span><img src="/images/hege-icon.svg" width="14" alt="Icon for section Overview"></span> Overview</a>
+        </h3>
+        <ul>
+          <li>
+            <a href="/overview/introduction/">Introduction</a>
+          </li>
+          <li>
+            <a href="/overview/about-hege/">About Hege</a>
+          </li>
+          <li>
+            <a href="/overview/tokenomics/">Tokenomics</a>
+          </li>
+          <li>
+            <a href="/overview/mission/">Mission</a>
+          </li>
+        </ul>
+        <h3>
+          <a href="/roadmap/"><span><img src="/images/roadmap-icon.svg" width="14" alt="Icon for section Roadmap"></span> Roadmap</a>
+        </h3>
+        <ul>
+          <li>
+            <a href="/roadmap/roadmap/">Roadmap</a>
+          </li>
+          <li>
+            <a href="/roadmap/content-and-brand/">Content and Brand</a>
+          </li>
+          <li>
+            <a href="/roadmap/chapter-unlocks/">Chapter Unlocks</a>
+          </li>
+        </ul>
+        <ul class="links">
+          <li>
+            <a href="https://www.hegecoin.com"><span><img src="/images/hege-icon.svg" width="14" alt="Hege icon"></span> Website</a>
+          </li>
+          <li>
+            <a href="https://t.me/Hegequarters"><span><img src="/images/telegram-icon.svg" width="14" alt="Telegram logo"></span> Telegram</a>
+          </li>
+          <li>
+            <a href="https://x.com/HegeCoin/"><span><img src="/images/x-icon.svg" width="14" alt="X logo"></span> X</a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/r/HegeCoin/"><span><img src="/images/reddit-icon.svg" width="14" alt="Reddit logo"></span> Reddit</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@HegeCoin"><span><img src="/images/youtube-icon.png" width="14" alt="YouTube logo"></span> YouTube</a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@hegecoinsol"><span><img src="/images/tiktok-icon.svg" width="14" alt="TikTok logo"></span> TikTok</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hege.coin"><span><img src="/images/instagram-icon.svg" width="14" alt="Instagram logo"></span> Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <article>
+        <h1>
+          Hege Documentation
+        </h1>
+        <p class="intro">
+          Welcome to the Hege documentation site. We use this site to discuss our white paper, roadmap and future plans. Please refer to the navigation on the left to help you find your way around.
+        </p>
+        <ul class="featured-links">
+          <li>
+            <a href="/overview/about-hege/">About Hege</a>
+          </li>
+          <li>
+            <a href="/roadmap/roadmap/">Roadmap</a>
+          </li>
+        </ul>
+        <h2 id="introduction">
+          Introduction
+        </h2>
+        <p>
+          Hege is more than just a project with memes and a storyline. We are aiming to build a community full of humor, transparency and knowledge. The original concept for Hege was for him to win over his crush, Hegena, but as the project progressed, the team realized that there’s other narratives that they can utilize, alongside the storyline.
+        </p>
+        <p>
+          We envision Hege as being a safe haven for beginners in the memecoin space. What do we mean by this? Although we are aware that no project in this space can be truly guaranteed positive returns, we pride ourselves on Hege being a space that is immune from price manipulation, rug pulls and shady business.
+        </p>
+        <p>
+          We can’t control the charts, but we can influence them through our actions — and our actions are consistent, and working towards our larger vision.
+        </p>
+        <h2 id="united-by-us-for-all-of-us">
+          United by us, for all of us
+        </h2>
+        <p>
+          Hege was created by one man, but quickly grew to become a team project, a team that previously had few connections in the space, and without financial backing. All of the team are invested and have the success of the project in their best interests. We’ve got here without any huge spend, favors from influential friends, or insider cash injections. We’ve made it to where we are organically, and people like that. The team are all regular people with day jobs, and a normal life. We’re here to make a change in the space.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
